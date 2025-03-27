@@ -1,5 +1,5 @@
 import librosa
-from transformers import AutoProcessor, Qwen2AudioForConditionalGeneration
+from modelscope import AutoProcessor, Qwen2AudioForConditionalGeneration
 import os
 
 model = Qwen2AudioForConditionalGeneration.from_pretrained("Qwen2-Audio-7B" ,trust_remote_code=True)
